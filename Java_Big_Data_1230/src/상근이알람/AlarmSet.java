@@ -14,12 +14,19 @@ public class AlarmSet {
         int hour = sc.nextInt();
         System.out.println("분을 입력하세요 : ");
         int minute = sc.nextInt();
-        int calc = (hour * 60) +minute;
-        if ( calc < 45 ) {
-            calc = (24 * 60) + minute;
+
+//      int calc = (hour * 60) +minute;
+//      if ( calc < 45 ) {
+//            calc = (24 * 60) + minute;
+//       }
+//       calc -= 45;
+//       System.out.printf("%d시 %d분\n", (calc / 60), (calc % 60));
+        
+        if((minute-45)>45){
+            System.out.println(hour + "시" + (minute-45) + "분");
+        } else if ((minute - 45)< 45) {
+            System.out.println((hour-1) + "시" + (60 + (minute-45)) + "분");
         }
-        calc -= 45;
-        System.out.printf("%d시 %d분\n", (calc / 60), (calc % 60));
     }
 }
 

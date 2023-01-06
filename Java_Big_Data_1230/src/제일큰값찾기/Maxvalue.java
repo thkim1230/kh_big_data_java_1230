@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Maxvalue {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("세자리 정수를 입력하세요 : ");
+        System.out.print("세자리 정수를 입력하세요 : ");
         int num = sc.nextInt();
         int a = num / 100;
         int b = (num % 100) / 10;

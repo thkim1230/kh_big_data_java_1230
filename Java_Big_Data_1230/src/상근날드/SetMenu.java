@@ -9,22 +9,19 @@ import java.util.Scanner;
 public class SetMenu {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("가격을 입력 하세요 : ");
-        int[] berger = new int[3];
-        int[] drink = new int[2];
-        for (int i = 0; i < berger.length; i++) {
-            berger[i] = sc.nextInt();
+        System.out.print("가격을 입력 하세요 : ");
+        int[] menu = new int[5];
+        for (int i = 0; i < menu.length; i++) {
+            menu[i] = sc.nextInt();
         }
-        int min = 0;
-        for (int e : berger) {
-            if (min > e) min = e;
+        int minb = menu[0];
+        for (int j = 0; j < 3; j++) {
+            if (minb > menu[j]) minb = menu[j];
         }
-        for (int i = 0; i < drink.length; i++) {
-            drink[i] = sc.nextInt();
+        int mind = menu[3];
+        for (int k = 4; k < 5; k++) {
+            if (mind > menu[k]) mind = menu[k];
         }
-        int min2 = 0;
-        for (int e : drink) {
-            if (min > e) min2 = e;
-        }
+        System.out.println("세트 메뉴의 가격은" + ((minb + mind) - 50) + "입니다.");
     }
 }

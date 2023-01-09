@@ -8,20 +8,25 @@ import java.util.Scanner;
 // 총 세트 메뉴의 금액 구하는 문제
 public class SetMenu {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         System.out.print("가격을 입력 하세요 : ");
+
         int[] menu = new int[5];
         for (int i = 0; i < menu.length; i++) {
             menu[i] = sc.nextInt();
         }
+
         int minb = menu[0];
         for (int j = 0; j < 3; j++) {
             if (minb > menu[j]) minb = menu[j];
         }
+
         int mind = menu[3];
         for (int k = 4; k < 5; k++) {
             if (mind > menu[k]) mind = menu[k];
         }
-        System.out.println("세트 메뉴의 가격은" + ((minb + mind) - 50) + "입니다.");
+
+        System.out.println("세트 메뉴의 가격은 " + ((minb + mind) - 50) + " 원입니다.");
     }
 }

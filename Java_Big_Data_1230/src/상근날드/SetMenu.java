@@ -17,16 +17,16 @@ public class SetMenu {
             menu[i] = sc.nextInt();
         }
 
-        int minb = menu[0];
+        int minB = menu[0];
         for (int j = 0; j < 3; j++) {
-            if (minb > menu[j]) minb = menu[j];
+            if (minB > menu[j]) minB = menu[j];
         }
 
-        int mind = menu[3];
-        for (int k = 4; k < 5; k++) {
-            if (mind > menu[k]) mind = menu[k];
+        int minD = menu[3];
+        for (int k = 3; k < 5; k++) {
+            if (minD > menu[k]) minD = menu[k];
         }
 
-        System.out.println("세트 메뉴의 가격은 " + ((minb + mind) - 50) + " 원입니다.");
+        System.out.println("세트 메뉴의 가격은 " + ((minB + minD) - 50) + " 원입니다.");
     }
 }

@@ -41,6 +41,6 @@ public class StringType {
         String name = "곰돌이사육사";
         char[] arrName = name.toCharArray();// 문자열을 문자로 구성된 배열로 만듬
         System.out.println(name);
-        System.out.println(arrName);;
+        System.out.println(arrName);
     }
 }

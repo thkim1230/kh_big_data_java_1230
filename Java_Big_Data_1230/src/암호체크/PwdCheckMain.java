@@ -10,8 +10,8 @@ public class PwdCheckMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] spw = {"!", "%", "_", "#", "&", "+", "-", "*", "/"};
-        String[] num = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "0"};
         int cnt = 0;
+
         while (true) {
             System.out.print("암호를 입력 하세요 :");
             String pwd = sc.next();
@@ -19,8 +19,8 @@ public class PwdCheckMain {
             if ((pwd.length() > 9) || (pwd.length() < 31)) {
                 for (int i = 0; i < spw.length; i++) {
                     if (pwd.contains(spw[i]) == true)
-                        for (int j = 0; j < num.length; j++) {
-                            if (pwd.contains(num[j]) == true)
+                        for (int j = 0; j < pwd.length(); j++) {
+                            if (pwd.charAt(j) >= '0' && pwd.charAt(j) <= '9')
                                 for (int k = 0; k < pwd.length(); k++) {
                                     if (pwd.charAt(k) >= 'a' && pwd.charAt(k) <= 'z')
                                         for (int l = 0; l < pwd.length(); l++) {

@@ -18,13 +18,13 @@ public class SetMenu {
         }
 
         int minB = menu[0];
-        for (int j = 0; j < 3; j++) {
-            if (minB > menu[j]) minB = menu[j];
+        for (int i = 0; i < 3; i++) {
+            if (minB > menu[i]) minB = menu[i];
         }
 
         int minD = menu[3];
-        for (int k = 3; k < 5; k++) {
-            if (minD > menu[k]) minD = menu[k];
+        for (int i = 3; i < 5; i++) {
+            if (minD > menu[i]) minD = menu[i];
         }
 
         System.out.println("세트 메뉴의 가격은 " + ((minB + minD) - 50) + " 원입니다.");

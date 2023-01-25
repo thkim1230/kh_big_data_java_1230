@@ -12,7 +12,6 @@ public abstract class Car {
     Car(String name){
         this.name = name;
     }
-
     void result (int area, int reCnt) {
         int needLiter = ((area * reCnt) / mileage);
         int cnt = (needLiter / maxL) + 1;

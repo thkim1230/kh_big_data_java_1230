@@ -11,7 +11,7 @@ public class Bus extends Car {
 
     @Override
     void addF(boolean addF) {
-        if (addF = true){
+        if (addF){
         maxL += 30;
         }
     }

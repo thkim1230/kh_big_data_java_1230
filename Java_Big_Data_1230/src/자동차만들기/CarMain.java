@@ -29,12 +29,10 @@ public class CarMain {
                 car = new Bus("버스");
                 break;
         }
-        System.out.print("부가 기능의 ON/OFF 를 선택 하세요. : ");
-        String onOff = sc.next();
-        if (onOff.equalsIgnoreCase("on")){
-            car.addF(true);
-        }else car.addF(false);
-
+        System.out.print("부가 기능 [1]ON [2]OFF : ");
+        int onOff = sc.nextInt();
+        boolean addF = (onOff == 1) ? true : false;
+        car.addF(addF);
         int reCnt = passCnt / car.seatCnt;
         if (passCnt < car.seatCnt) {
             reCnt = 1;

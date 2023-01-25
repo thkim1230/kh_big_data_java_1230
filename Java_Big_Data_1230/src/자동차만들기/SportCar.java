@@ -11,8 +11,8 @@ public class SportCar extends Car {
 
     @Override
     void addF(boolean addF) {
-        if (addF = true) {
-            speed = (int) (speed * 1.2);
+        if (addF) {
+            speed *= 1.2;
         }
     }
 }

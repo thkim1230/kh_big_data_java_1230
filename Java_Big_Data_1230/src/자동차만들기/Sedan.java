@@ -11,7 +11,7 @@ public class Sedan extends Car {
 
     @Override
     void addF(boolean addF) {
-        if (addF = true){
+        if (addF){
             seatCnt += 1;
         }
     }

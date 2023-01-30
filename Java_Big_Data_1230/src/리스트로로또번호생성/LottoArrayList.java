@@ -10,7 +10,7 @@ public class LottoArrayList {
         
         while (true){
             tmp = ((int) (Math.random() * 45) + 1);
-            if(!list.contains(tmp)) list.add(tmp);
+            if(!list.contains(tmp)) list.add(tmp); // 중복 체크
             if(list.size() == 6)break;
         }
         for (Integer e : list) System.out.print(e + " ");

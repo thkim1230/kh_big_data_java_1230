@@ -32,9 +32,12 @@ public class ClassSortEx1 {
         System.out.println(" 석차  성적   이름     학번");
         System.out.println("---------------------------");
         int rank= 0;
+        int preScore = 0;
         for (Student e : ts) {
-            rank++;
+            if (preScore != e.score) rank ++; // 점수가 같지 않으면 석차 생성 (점수가 같으면 석차도 같음)
             System.out.println("  " + rank + "   " + e.score + "    " + e.name + "    " + e.id);
+            preScore = e.score; // 현재 점수를 변수에 저장
+
         }
     }
 }

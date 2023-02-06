@@ -24,6 +24,7 @@ public class Audio implements RemoteControl {
         }
         System.out.println("현재 Audio 볼륨 : " + this.volume);
     }
+    @Override
     public void getInfo() {
         System.out.println("Audio 입니다.");
         System.out.println("현재 볼륨은 "+ volume + "입니다.");

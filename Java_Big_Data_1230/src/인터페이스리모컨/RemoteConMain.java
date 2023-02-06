@@ -1,9 +1,8 @@
 package 인터페이스리모컨;
-
 import java.util.Scanner;
-
 public class RemoteConMain {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         System.out.print("제품을 선택 하세요. [1] TV [2] Audio : ");
         int sel = sc.nextInt();
